@@ -52,6 +52,11 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+jar {
+	manifest {
+		attributes 'BuenSaborApplication': 'com.entidades.buenSabor.BuenSaborApplication'
+	}
+}
 
 tasks.jar {
 	enabled = true
@@ -59,10 +64,4 @@ tasks.jar {
 
 bootJar {
 	enabled=true
-}
-
-jar {
-	manifest {
-		attributes 'BuenSaborApplication': 'com.entidades.buenSabor.BuenSaborApplication' // Reemplaza 'tu.paquete.MainClass' con la clase principal de tu aplicación
-	}
 }
