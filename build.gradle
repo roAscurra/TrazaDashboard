@@ -61,3 +61,8 @@ bootJar {
 	enabled=true
 }
 
+jar {
+	manifest {
+		attributes 'BuenSaborApplication': 'com.entidades.buenSabor.BuenSaborApplication' // Reemplaza 'tu.paquete.MainClass' con la clase principal de tu aplicación
+	}
+}
